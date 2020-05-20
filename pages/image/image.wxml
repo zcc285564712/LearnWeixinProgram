@@ -1,0 +1,34 @@
+<!--pages/image/image.wxml-->
+<!-- 重点：
+      1.image：可以是单标签可以是双标签 
+      2.有默认自己的大小 320*240
+      3.是行内块元素
+-->
+
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589969685027&di=fa23766ba896c0a60bc758d798d3f96c&imgtype=0&src=http%3A%2F%2Fimg1.gtimg.com%2Fsports%2Fpics%2Fhv1%2F91%2F215%2F1483%2F96486991.jpg"></image>
+
+
+<!-- 2.点击调起手机相册选择图片，微信API；wx.chooseImage -->
+<button bindtap="handleImage">选择图片</button>
+<view wx:for="{{imageList}}" wx:key="this">
+	<image src="{{item}}"></image>
+</view>
+
+<!-- 2.图片懒加载：lazy-load -->
+<image  
+  wx:for="{{3}}" 
+  wx:key="this"
+  lazy-load
+  bindload="handleLazy"
+  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589969685027&di=fa23766ba896c0a60bc758d798d3f96c&imgtype=0&src=http%3A%2F%2Fimg1.gtimg.com%2Fsports%2Fpics%2Fhv1%2F91%2F215%2F1483%2F96486991.jpg"
+>
+</image>
+
+<!-- 3.show-menu-by-longpress:长按出现弹框识别小程序码 -->
+<image mode="scaleToFill" show-menu-by-longpress src="http://img0.imgtn.bdimg.com/it/u=3508279169,469409455&fm=26&gp=0.jpg"></image>
+<image mode="aspectFit" show-menu-by-longpress src="http://img0.imgtn.bdimg.com/it/u=3508279169,469409455&fm=26&gp=0.jpg"></image>
+
+<!-- 4.mode:图片显示的适应样式 -->
+<image mode="scaleToFill" show-menu-by-longpress src="http://img0.imgtn.bdimg.com/it/u=3508279169,469409455&fm=26&gp=0.jpg"></image>
+<image mode="top" show-menu-by-longpress src="http://img0.imgtn.bdimg.com/it/u=3508279169,469409455&fm=26&gp=0.jpg"></image>
+<image mode="widthFix" show-menu-by-longpress src="http://img0.imgtn.bdimg.com/it/u=3508279169,469409455&fm=26&gp=0.jpg"></image>

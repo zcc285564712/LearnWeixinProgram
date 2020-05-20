@@ -1,0 +1,10 @@
+<!--pages/view/view.wxml-->
+<!-- 1.view是块级元素 -->
+<view>我是陈辰</view>
+
+<!-- 2.hover-class 点击对应类名的样式-->
+<view class="box1" hover-class="hover-view">我想打篮球</view>
+<!-- 3.hover-stop-propagation 是否阻止父元素被触发（类似事件冒泡） -->
+<view class="box2" hover-class="hover-box2">
+  <view class="box3" hover-stop-propagation>我是坤</view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/input/input.wxml-->
+<!-- 1.input组件；默认没有边框的 -->
+<input class="input"></input>
+
+<!-- 2.value:默认值 -->
+<input class="input" value="我是陈辰"></input>
+
+<!-- 3.type: 弹起不同类型的键盘
+      number: 数字键盘；
+      text： 文字键盘
+      idcard: 身份证输入键盘
+      digit: 带小数点的键盘
+ -->
+ <input class="input" type="number" value="数字键盘；"></input>
+ <input class="input" type="text" value="文字键盘"></input>
+ <input class="input" type="idcard" value="身份证输入键盘"></input>
+ <input class="input" type="digit" value="带小数点的键盘"></input>
+
+ <!-- 4.password:暗文 -->
+ <input class="input" type="password"></input>
+
+ <!-- 5.placeholder -->
+
+ <!-- 6.placeholder-class -->
+
+ <!-- 7.confirm-type：键盘右下角的文本值，仅在type是text时候生效 -->
+ <input class="input" confirm-type="search"></input>
+
+ <!-- 8.input绑定事件：bindinput、bindblur、bindfocus等等 -->
+ <input class="input" bindinput="handleInput" value="input"></input>
+ <input class="input" bindblur="handleBlur" value="blur"></input>
+ <input class="input" bindfocus="handleFocus" value="focus"></input>

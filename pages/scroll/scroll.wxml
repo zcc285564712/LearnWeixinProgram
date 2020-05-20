@@ -1,0 +1,31 @@
+<!--pages/scroll/scroll.wxml-->
+<!-- 1.scroll-x:水平滚动
+     2.scroll-y:垂直滚动
+ -->
+<scroll-view class="container" scroll-x>
+	<view class="item">
+		<image mode="top" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1229616659,2735492520&fm=26&gp=0.jpg"></image>
+	</view>
+	<view class="item">
+		<image mode="top" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589979351126&di=4bc7515fa3c752f469529408e0da7009&imgtype=0&src=http%3A%2F%2Fwx4.sinaimg.cn%2Fcrop.0.0.758.425.1000%2F006hBSEYgy1fg5r740536j30l20caju5.jpg"></image>
+	</view>
+	<view class="item">
+		<image mode="top" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589979351126&di=edcd07a9bf73f3a2e937f18f2eda60e5&imgtype=0&src=http%3A%2F%2Fworld.haiwainet.cn%2FNMediaFile%2F2014%2F1208%2FLOCAL201412081106000494116029555.jpg"></image>
+	</view>
+	<view class="item">
+		<image mode="right" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589979351125&di=44abb0331aec184142cb3dc17dd88af9&imgtype=0&src=http%3A%2F%2Fi1.sinaimg.cn%2Fcj%2F2014%2F1118%2FU5403P31DT20141118195856.jpg"></image>
+	</view>
+</scroll-view>
+
+<!-- 2.垂直滚动：scroll-y -->
+<scroll-view class="container2" scroll-y>
+	<view class="item2" wx:for="{{10}}" wx:key="this"></view>
+</scroll-view>
+<!-- 3.监听滚动：bindscroll -->
+<scroll-view class="container2" scroll-y bindscroll="handleScroll">
+	<view class="item2" wx:for="{{10}}" wx:key="this"></view>
+</scroll-view>
+
+<!-- 4.监听滚动位置: bindscrolltoupper:滚动到顶部/左边触发
+  bindscrolltolower：滚动底部/右边触发 
+-->
