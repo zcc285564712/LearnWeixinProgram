@@ -1,0 +1,23 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button按钮默认是块级元素，独占一行，但是设置了size:mini属性后变为行内块 -->
+<button>按钮</button>
+<button size="mini">小按钮</button>
+<button>按钮</button>
+
+<!-- 2.type属性 -->
+<button size="mini" type="primary">确定</button>
+<button size="mini" type="default">确定</button>
+<button size="mini" type="warn">确定</button>
+
+<!-- 3.plain:镂空效果 -->
+<button size="mini" plain>按钮</button>
+
+<!-- 4.禁止点击 disabled -->
+<button size="mini" disabled>禁止点击</button>
+
+<!-- 5.loading加载中 -->
+<button size="mini" loading="{{isLoading}}" bindtap="startRequest">开始请求</button>
+<button size="mini" type="warn" bindtap="endRequest">停止请求</button>
+
+<!-- 6.hover-class -->
+<button hover-class="pressed">点击变色</button>

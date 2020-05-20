@@ -1,2 +1,21 @@
 <!--pages/text/text.wxml-->
-<text>pages/text/text.wxml</text>
+<!-- 1.text是行内元素，想要换行，在标签内容后面加\n -->
+<text>呵呵</text>
+<text>哈哈\n</text>
+<text>哼哼\n</text>
+
+<!-- 2.selectable:true -->
+<!-- 选中事件，默认不能长按选中 -->
+<text selectable="{{true}}">选中我</text>
+<text selectable>选中我\n</text>
+
+<!-- 3.space：决定空格大小 -->
+<!-- 默认是nbsp;emsp:中文空格大小；ensp：半个中文空格大小 -->
+<text>hello world\n</text>
+<text space="nbsp">hello world\n</text>
+<text space="ensp">hello world\n</text>
+<text space="emsp">hello world\n</text>
+
+<!-- 4.decode:是否解码文本 -->
+<!-- 默认是false -->
+<text decode>5 &gt; 3</text>
