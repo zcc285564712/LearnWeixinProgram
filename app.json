@@ -1,6 +1,39 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/car/car",
+    "pages/fenlei/fenlei"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5577",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "陈辰的小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/icon/home.png",
+        "selectedIconPath": "assets/icon/home_active.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "assets/icon/car.png",
+        "selectedIconPath": "assets/icon/car_active.png"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "text": "分类",
+        "iconPath": "assets/icon/fenlei.png",
+        "selectedIconPath": "assets/icon/fenlei_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap66.json"
 }

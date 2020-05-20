@@ -1,2 +1,20 @@
 <!--pages/home/home.wxml-->
-<text>你好啊二狗子</text>
+<!-- 1.小程序的数据绑定--- {{}} -->
+<view>你好，我是{{name}}</view>
+
+<!-- 2.循环遍历-- wx:for="{{变量名}}" 
+      需要绑定wx:key值
+-->
+<view wx:for="{{player}}" wx:key="name">我是{{item.name}},我的号码是{{item.number}}</view>
+
+<!-- 事件监听改变data -->
+<view style="margin-top:20px">共计{{counter}}元</view>
+<button size="large" bindtap="handleAdd">+</button>
+<button size="large" bindtap="handleDecrease">-</button>
+
+<!-- 2.获取用户信息 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleUserInfo">点击获取用户信息</button>
+
+<!-- 3.获取用户信息--用组件自动展示 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
