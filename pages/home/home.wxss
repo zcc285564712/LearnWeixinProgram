@@ -1,1 +1,11 @@
 /* pages/home/home.wxss */
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+  text-align: center;
+  line-height: 200px;
+}
+.active{
+  color: white
+}

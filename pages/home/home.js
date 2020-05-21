@@ -5,14 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      isActive: false,
   },
-
+  handleColor(){
+    this.setData({
+      isActive: !this.data.isActive
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+   
   },
 
   /**

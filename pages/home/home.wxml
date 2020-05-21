@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
 <text>你好啊二狗子</text>
+<button bindtap="handleColor">切换颜色</button>
+<view class="box {{isActive ? 'active' : ''}}">你是蔡徐坤</view>
