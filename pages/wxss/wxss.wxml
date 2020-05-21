@@ -1,0 +1,17 @@
+<!--pages/wxss/wxss.wxml-->
+<text>pages/wxss/wxss.wxml</text>
+<!-- 1.三种样式优先级 -->
+<!-- 行内样式 > 外联样式 > 全局样式 -->
+<view>
+  
+</view>
+
+<!-- 2.wxss中的单位：rpx 详情见note-->
+  <view class="box1">
+    我是px
+  </view>
+  <view class="box2">
+    我是rpx
+  </view>
+    
+    
