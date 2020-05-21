@@ -21,3 +21,38 @@
 
 <!-- 6.hover-class -->
 <button hover-class="pressed">点击变色</button>
+
+<view>{{date}}</view>
+
+<map longitude="100.11" latitude="39.6"></map>
+
+<!-- wx:if:dom没了，设置hidden是组件只是隐藏了，dom还在 -->
+<button bindtap="switchShow">切换显示</button>
+<view wx:if="{{isShow}}">显示吗</view>
+
+
+<!-- wx:for循环 -->
+<view wx:for="{{moveList}}" wx:key="this">{{item}}</view>
+
+<!-- wx:for循环 给item起别名  wx:for-item="i" -->
+<view wx:for="{{moveList}}" wx:key="this" wx:for-item="i">{{i}}</view>
+--------------------------------
+<!-- 模板渲染 template
+      1.给模板起一个名字
+      2.在使用的时候，给template用is指定使用哪个名字
+      3.然后传入data，data里键值对的形式
+-->
+<template name="cc">
+  <view>{{text}}</view>
+  <text>{{info}}</text>
+</template>
+
+<template is="cc" data="{{text: '篮球',info:'天空'}}">
+</template>
+
+<!-- 2.导入模板使用，在模板文件里定义好模板，然后在页面中import引入
+      注意导入模板不能使用include，include可以导入wxml;wxss；
+      比如可以用include引入头部和底部，在引入的地方占据位置
+ -->
+<import src="./template.wxml" />
+<template is="detail" data="{{hobby: '二狗子',color: '蓝色'}}"></template>

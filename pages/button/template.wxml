@@ -1,0 +1,4 @@
+<template name="detail">
+  <view>{{hobby}}</view>
+  <view>{{color}}</view>
+</template>

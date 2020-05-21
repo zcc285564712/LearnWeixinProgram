@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isLoading: false
+    isLoading: false,
+    date: new Date().toLocaleString(),
+    isShow: true,
+    moveList: ['特叔服务','精油开背','泰式按摩']
   },
 
   // 按钮开始请求
@@ -21,6 +24,13 @@ Page({
     })
   },
 
+  // 切换显示
+  switchShow(){
+    this.setData({
+      isShow: !this.data.isShow
+    })
+  },
+
 
 
 
@@ -30,7 +40,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setInterval(()=>{
+      this.setData({
+        date: new Date().toLocaleString()
+      },1000)
+    })
   },
 
   /**
