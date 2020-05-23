@@ -1,0 +1,2 @@
+<view class="titleclass">我是{{title}}</view>
+<view>我爱吃{{food}}</view>

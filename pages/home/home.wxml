@@ -1,2 +1,16 @@
 <!--pages/home/home.wxml-->
-<text>你好啊二狗子</text>
+<text class="title">你好啊二狗子</text>
+<!-- 1.自定义组件初体验 -->
+<!-- <my-cpn></my-cpn> -->
+
+<!-- 2.自定义组件传值 -->
+<my-prop title="cc" titleclass="red" food="西瓜" />
+
+<!-- 3.自定义组件传类名 -->
+<my-prop titleclass="red" />
+
+<!-- 4.子组件向父组件传值 -->
+<view>总计 {{counter}} 元</view>
+<my-event bind:toClick="toHandleClick"></my-event>
+
+

@@ -1,0 +1,2 @@
+<view class="title">{{title}}</view>
+<view class="info">我爱打篮球，可是今天要加班</view>
