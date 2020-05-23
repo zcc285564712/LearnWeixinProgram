@@ -56,3 +56,5 @@
  -->
 <import src="./template.wxml" />
 <template is="detail" data="{{hobby: '二狗子',color: '蓝色'}}"></template>
+
+<!-- 麻烦 -->
