@@ -7,6 +7,26 @@ Page({
   data: {
 
   },
+  toclick(e) {
+    console.log(e)
+  },
+  handleClick(){
+    // 使用this.selectComponent找到对应的组件
+   let my_sel = this.selectComponent('.mySel');
+   // 然后调用组件内部的方法
+    my_sel.addFn(10)
+  },
+
+
+
+
+
+
+
+
+
+
+
 
   /**
    * 生命周期函数--监听页面加载

@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
 <text>你好啊二狗子</text>
+
+<my-tab title="{{['小龙虾','烧烤','东北菜']}}" bind:handleTabClick="toclick"></my-tab>
+
+----------------------------------
+<button bind:tap="handleClick">点击增加</button>
+<my-sel class="mySel"></my-sel>
