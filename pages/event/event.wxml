@@ -1,0 +1,28 @@
+<!-- 事件类型 -->
+<!-- 1.以下两种写法一样 -->
+<view class="box" bindtap="handleClick">bindtap</view>
+<view class="box" bind:tap="handleClick">bind:tap</view>
+
+<!-- touchcancel在某些特定场景下触发(比如来电打断)；
+      tap事件和longpress事件只会触发一个
+ -->
+<view class="box" bind:touchstart="handleTouchStart" bind:touchmove="handleTouchMove" bind:touchend="handleTouchEnd" bind:touchcancel="handleTouchCancel">touch</view>
+<!-- 2.长按事件 -->
+<view class="box" bind:longpress='handleLongPress'></view>
+
+<!-- 3.事件传参数 -->
+<view class="container">
+	<block wx:for="{{infoList}}" wx:key="index">
+		<view class="item" bind:tap="handleInfo" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+	</block>
+</view>
+
+<!-- 4.事件捕获和冒泡 -->
+<!-- capture-bind:tap   只能用冒号，点击最里面的，最先捕获最外层，但是从最里层向外冒泡 -->
+<!-- bind：一层层传递 -->
+<!-- catch：阻止事件的进一步传递 -->
+<view class="box1" capture-bind:tap="handleCapture1" bind:tap="handleBind1">
+	<view class="box2" capture-bind:tap="handleCapture2" catchtap="handleBind2">
+		<view class="box3" capture-bind:tap="handleCapture3" bind:tap="handleBind3"></view>
+	</view>
+</view>
