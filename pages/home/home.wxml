@@ -1,2 +1,14 @@
 <!--pages/home/home.wxml-->
 <text>你好啊二狗子</text>
+------------------------
+<!-- 1.插槽初体验 -->
+<my-slot>
+  <button>我是插槽的按钮</button>
+</my-slot>
+
+<!-- 2.多个插槽使用，要在组件内的component里设置options的multipleSlots:true -->
+----------------------------
+<my-slots>
+  <button slot="slot2">我是插槽2</button>
+  <button slot="slot1">我是插槽1</button>
+</my-slots>

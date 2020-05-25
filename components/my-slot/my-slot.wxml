@@ -1,0 +1,5 @@
+<view>
+  <view>哈哈哈哈</view>
+  <slot></slot>
+  <view>呵呵呵</view>
+</view>
