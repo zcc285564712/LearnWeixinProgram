@@ -33,7 +33,7 @@
 
 <!-- wx:for循环 -->
 <view wx:for="{{moveList}}" wx:key="this">{{item}}</view>
-
+==========================
 <!-- wx:for循环 给item起别名  wx:for-item="i" -->
 <view wx:for="{{moveList}}" wx:key="this" wx:for-item="i">{{i}}</view>
 --------------------------------
