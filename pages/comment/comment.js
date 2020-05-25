@@ -1,27 +1,18 @@
-// pages/home/home.js
+// pages/comment/comment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: 'hh'
+
   },
-  // 点击按钮跳转
-  handleToDetail(){
-    // 跳转
-    wx.navigateTo({
-      url: '/pages/detail/detail?hobby="ball"&color="red"',
-    })
-    // wx.redirectTo({
-    //   url: 'url',
-    // })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

@@ -1,2 +1,17 @@
 <!--pages/home/home.wxml-->
-<text>你好啊二狗子</text>
+<text>{{title}}</text>
+
+<!-- 1.navigator跳转 -->
+<navigator url="/pages/detail/detail?name='陈辰&age='18'">跳转到详情(携带数据)</navigator>
+
+<!-- 2.navigator的属性: redirect:将之前的页面关闭了 -->
+<navigator url="/pages/detail/detail" open-type="redirect">跳转到详情(redirect)</navigator>
+
+<!-- 3.navigator的属性：switchTab: 效果相当于点击tabBar -->
+<navigator url="/pages/about/about" open-type="switchTab">相当于点击tabBar</navigator>
+
+<!-- 4.navigator的属性: reLaunch -->
+<navigator url="/pages/detail/detail" open-type="reLaunch">跳转到详情reLaunch</navigator>
+==================================
+<!-- 通过js代码实现跳转 -->
+<button size="mini" bind:tap="handleToDetail">跳转到详情</button>

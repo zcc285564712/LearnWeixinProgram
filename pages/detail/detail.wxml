@@ -1,0 +1,11 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<!-- 1.跳转到评价 -->
+<navigator url="/pages/comment/comment">到评价</navigator>
+
+<!-- 5.返回操作：设置navigateBack -->
+<navigator open-type="navigateBack">返回到首页</navigator>
+
+=========================
+<!-- 6.通过js返回 -->
+<button size="mini" bind:tap="handleBack">返回到首页按钮实现</button>
