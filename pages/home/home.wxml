@@ -1,2 +1,11 @@
 <!--pages/home/home.wxml-->
-<text>你好啊二狗子</text>
+<!-- 1.loading -->
+<button size="mini" bind:tap="handleClickToast">showToast</button>
+<!-- 2.modal -->
+<button size="mini" bind:tap="handleClickModal">showModal</button>
+<!-- 3.showLoading -->
+<button size="mini" bind:tap="handleLoading">showLoading</button>
+<!-- 4.actionSheet -->
+<button size="mini" bind:tap="handleActionSheet">actionSheet</button>
+<!-- 5.分享按钮 -->
+<button size="mini" open-type="share">分享</button>
