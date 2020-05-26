@@ -4,5 +4,6 @@
     "pages/home/home",
     "pages/text/text",
     "pages/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap1.json"
 }
