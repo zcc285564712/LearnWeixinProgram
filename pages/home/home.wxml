@@ -1,2 +1,10 @@
-<!--pages/home/home.wxml-->
-<text>你好啊二狗子</text>
+<!-- 轮播图 -->
+<w-swiper list="{{banners}}"></w-swiper>
+
+<!-- 推荐轮播 -->
+<w-recommend list="{{recommends}}"></w-recommend>
+
+<!-- 本周流行 --> 
+<w-popular></w-popular>
+
+<w-tab-control titles="{{titles}}" bind:tabclick="handleClick"></w-tab-control>
